@@ -19,7 +19,7 @@ jobs:
     permissions:
       id-token: write # pub.dev authenticates the workflow with an OIDC token
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
       - uses: dart-lang/setup-dart@v1 # sets up pub.dev credentials from OIDC
       - uses: subosito/flutter-action@v2
         with:
